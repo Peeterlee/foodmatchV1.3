@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Mali|Ranchers');
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+#app {
+    background-image:url(../img/background.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns:repeat(3), 1fr;
+    grid-template-rows:25% 62% 13%;
+    grid-template-areas:
+        "logo logo logo"
+        "ab ab ab"
+        "foot foot foot";
+    position:relative;
+}
+
+.logo-container {
+    width:200px;
+    grid-area:logo;
+    margin:0 auto;
+    margin-top:30px;
+}
+
+footer {
+    grid-area:foot;
+}
+
+#back {
+    width:30px;
+    bottom:0;
+    left:0;
+    position:absolute;
+    margin-left:20px;
+    margin-bottom:15px;
+}
+
+.about-content {
+    grid-area:ab;
+    width:100%;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    background-color:#FCE2C4;
+    text-align:center;
+    opacity:.8;
+}
+
+.pic-container {
+    height:164px;
+    position:relative;
+}
+
+.circle {
+    display:inline-block;
+    width:130px;
+    height:130px;
+    background-color:white;
+    border-radius:50%;
+    margin-top:30px;
+    position:absolute;
+    z-index:1;
+    transition-duration: 1s;
+}
+
+.peter{
+    background-image:url(../img/peter.jpg);
+    background-position:center;
+    background-size:cover;
+    left:35px;
+}
+
+.mitch {
+    background-image:url(../img/mitch.jpg);
+    background-position:center;
+    background-size:cover;
+        
+}
+
+
+.explanation {
+    font-family: 'Mali', cursive;
+    text-align:left;
+    padding:0 30px;
+    margin-top:20px;
+    font-size:17px;
+}
+
+@media screen and (min-width: 768px){
+    #app {
+        background-image:url(../img/background_tablet.svg);
+        grid-template-columns:repeat(5), 1fr;
+        grid-template-rows:25% 62% 13%;
+        grid-template-areas:
+        "logo logo logo logo logo"
+        "ab ab ab ab ab"
+        "foot foot foot foot foot";
+    }
+    
+    #back{
+        width:60px;
+    }
+    
+    .logo-container {
+        margin-top:5px;
+        width:400px;
+    }
+    
+    .circle {
+        width:250px;
+        height:250px;
+    }
+    
+    .peter {
+        left:10%;
+    }
+    
+    .mitch {
+        right:10%;
+    }
+    
+    .explanation {
+        margin-top:160px;
+        font-size:25pt;
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 41.8 20" style="enable-background:new 0 0 41.8 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#9F3224;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Ranchers-Regular';}
+	.st3{font-size:8.4382px;}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="18.5463" y1="7.910093e-04" x2="22.4745" y2="16.6658">
+		<stop  offset="0" style="stop-color:#D77B6A"/>
+		<stop  offset="0.3722" style="stop-color:#D67867"/>
+		<stop  offset="0.6413" style="stop-color:#D4705E"/>
+		<stop  offset="0.8773" style="stop-color:#D0624E"/>
+		<stop  offset="1" style="stop-color:#CC5843"/>
+	</linearGradient>
+	<path class="st0" d="M33,18.9H8.8c-4.2,0-7.6-3.4-7.6-7.6V8.7c0-4.2,3.4-7.6,7.6-7.6H33c4.2,0,7.6,3.4,7.6,7.6v2.5
+		C40.6,15.4,37.2,18.9,33,18.9z"/>
+	<text transform="matrix(1.1272 0 0 1 9.7445 12.9663)" class="st1 st2 st3">STEP 3</text>
+</g>
+</svg>

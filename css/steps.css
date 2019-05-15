@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css?family=Mali|Ranchers');
+ 
+body{
+    padding:0;
+    margin:0;
+}
+  
+#step-page {
+    background-image:url(../img/background.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns:repeat(3), 1fr;
+    grid-template-rows:15% 10% 40% 22% 11%;;
+    grid-template-areas: 
+        "logo logo logo"
+        "st st st"
+        "cc cc cc"
+        "sc sc sc"
+        "foot foot foot";
+    position:relative;
+}
+
+.logo-container {
+    width:150px;
+    grid-area:logo;
+    margin:0 auto;
+    margin-top:20px;
+    text-align:center;
+}
+
+footer {
+    grid-area:foot;
+}
+
+#back {
+    width:30px;
+    bottom:0;
+    left:0;
+    position:absolute;
+    margin-left:20px;
+    margin-bottom:15px;
+}
+
+/*============   STEPS  =================*/
+
+#steps-container {
+    grid-area:st;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.steps {
+    color:white;
+    text-align:center;
+    font-family: 'Ranchers', cursive;
+    display:inline-block;
+    font-size:10pt;
+    width:50px;
+    padding:5px;
+    border-radius:20px;
+    border:1px solid #A13324;
+    background-color:rgba(203,87,67,.6);
+}
+
+.step11, .step22, .step33 {
+    background-image: linear-gradient(to bottom right,rgba(203,87,67,.8),#CB5743);
+    animation:pulse .8s alternate;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+
+}
+
+.triangle {
+    width:0;
+    height:0;
+    bottom:0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #EAB871;
+    border-bottom: 10px solid transparent;
+    display:inline-block;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+/*============CATEGORIES=================*/
+
+#category-container {
+    grid-area:cc;
+    margin:0 auto;
+    position:relative;
+}
+
+.categories, .categoriess {
+    border:2px solid black;
+    font-family: 'Ranchers', cursive;
+    color:white;
+    text-align:center;
+    justify-content: center;
+    width:300px;
+    height:70px;
+    padding:20px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-shadow: 
+     2px   0  0   #000, 
+    -2px   0  0   #000, 
+     0    2px 0   #000, 
+     0   -2px 0   #000, 
+     1px  1px 0   #000, 
+    -1px -1px 0   #000, 
+     1px -1px 0   #000, 
+    -1px  1px 0   #000,
+     1px  1px 5px #000;
+    transition:1.5s;
+}
+
+.categoriess {
+    font-size:40pt;
+    position:absolute;
+    transform:translateX(-180%);
+    transition:1.5s;
+}
+
+.KJ{
+    background-image:url(../img/ct-patterns/KJ.svg);
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:30pt;
+    line-height:70px;
+    letter-spacing: 1px;    
+}
+
+.western {
+    background-image:url(../img/ct-patterns/western.svg);
+    font-size:40pt;
+    letter-spacing: 4px;
+}
+
+.indian{
+    background-image:url(../img/ct-patterns/indian-01.svg);
+    font-size:40pt;
+    letter-spacing: 4px;
+}
+
+.ca1, .ca2, .ca3, .ca4 {
+    margin-bottom:20px;
+    letter-spacing: 3px;
+}
+
+.ca1, .ca3 {
+    background-image:url(../img/ct-patterns/pattern-3.svg);
+    top:0;
+}
+
+.ca2, .ca4 {
+    background-image:url(../img/ct-patterns/pattern-2.svg);
+    top:134px;
+}
+
+#selection-container {
+    grid-area:sc;
+    margin:0 auto;
+    transform:translateX(-180%);
+    transition:1.5s;
+}
+
+.sel-title {
+    font-family: 'Ranchers', cursive;
+    text-align:center;
+    font-size:20pt;
+    margin-bottom:10px;
+}
+
+.selection {
+    width:300px;
+    border:2px solid black;
+    height:50px;
+    padding:20px;
+    border-radius:100px;
+    background-image:linear-gradient(to right bottom, #A6C76A, rgba(166,199,105,.1));
+    border:2px solid gray;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.sel1, .sel2{
+    width:80px;
+    margin-right:10px;
+}
+
+.icons {
+    width:70px;
+}
+
+/*Step Buttons Animation*/
+
+@keyframes pulse {
+    
+    0% {transform: scale(1);}
+    100% {transform:  scale(1.3); }
+    
+}
+
+/*=========== STEP PAGE TABLET SIZE  =================*/
+
+@media screen and (min-width: 768px){
+    
+    #back{
+        width:45px;
+        bottom:-10px;
+    }
+    
+    #step-page {
+        background-image:url(../img/background_tablet.svg);
+        grid-template-columns:repeat(5) 1fr;
+        grid-template-rows:15% 15% 40% 20% 10%;
+        grid-template-areas:
+            "logo logo logo logo logo"
+            ". st st st ."
+            ". cc cc cc ."
+            ". sc sc sc . "
+            ". foot foot foot ." ;
+    }
+    
+    .logo-container {
+        width:300px;
+        height:300px;
+    }
+    
+    .steps {
+        width:130px;
+        font-size:22pt;
+    }
+    
+    .triangle {
+        margin-left:20px;
+        margin-right:20px;
+    }
+    
+    #category-container{
+        width:auto;
+        margin:0;
+    }
+    
+    .categories {
+        width:auto;
+        height:150px;
+        font-size:60pt;
+        line-height:140px;
+    }
+    
+    .categoriess {
+        width:93%;
+        height:130px;
+        font-size:90pt;
+        line-height:120px
+    }
+    
+    .ca2, .ca4 {
+        top:214px;
+    }
+    
+    #selection-container {
+        width:100%;
+        margin:0;
+    }
+    
+    .sel-title {
+        font-size:40pt;
+        width:auto;
+    }
+    
+    .selection {
+        width:94%;
+        height:120px;
+        margin-right:0;
+    }
+    
+    .sel1, .sel2{
+        width:150px;
+        height:auto;
+        margin-right:40px;
+    }
+
+}
+
+
+/*============CATEGORIES=================*/
+
+
+/* Step 2 Animation */
+
+
+@media screen and (min-width: 768px){
+    
+    #app2{
+        background-image:url(../img/background_tablet.svg);
+        grid-template-columns:repeat(5) 1fr;
+        grid-template-rows:18% 12% 40% 20% 10%;
+        grid-template-areas:
+            "logo logo logo logo logo"
+            ". st st st ."
+            ". cc cc cc ."
+            ". sc sc sc . "
+            ". foot foot foot ." ;
+    }
+    
+    #app3 {
+        background-image:url(../img/background_tablet.svg);
+        grid-template-columns:repeat(5) 1fr;
+        grid-template-rows:15% 12% 40% 20% 10%;
+        grid-template-areas:
+            "logo logo logo logo logo"
+            ". st st st ."
+            ". cc cc cc ."
+            ". sc sc sc . "
+            ". foot foot foot ." ;
+    }
+    #back {
+        width:45px;
+        bottom:-10px;
+    }
+    
+    .logo-container {
+        width:300px;
+        height:100px;
+    }
+    
+    .steps {
+        width:130px;
+        font-size:22pt;
+    }
+    
+    .triangle {
+        margin-left:20px;
+        margin-right:20px;
+    }
+    
+    #category-containers{
+        width:auto;
+        margin:0;
+    }
+ 
+}
+
+/*////Result Page Small Screen////*/
+
+#result-page {
+    background-image: url(../img/background.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3), 1fr;
+    grid-template-areas:
+        "logo logo logo"
+        "main-cnt main-cnt main-cnt"
+        "select select select"
+        ". ic ."
+        "again again again";
+    display:none;
+}
+
+#logo {
+    width: 120px;
+    grid-area: logo;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/*Main container*/
+
+#main-cnt {
+    grid-area: main-cnt;
+    background-color: #FCE3C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+}
+
+.match-title {
+    font-family: ranchers;
+    color:#ED7F5A;;
+    font-size: 20pt;
+    margin: 6px;
+    letter-spacing: 1px;
+}
+
+
+.final-img {
+    width: 300px;
+    height: 180px;
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: 2s;
+    position: relative;
+}
+
+#zoomIn {
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    width: 30px;
+}
+
+#title, #res {
+    font-family: ranchers;
+    color: #ED7F5A;
+    font-size: 13pt;
+    margin: 5px 0px 10px 3px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: mali;
+    font-size: 13px;
+    margin: 0px 5px 10px 5px;
+}
+
+/*your selections title*/
+
+#sel-title {
+    grid-area: select;
+    display: flex;
+    justify-content: center;
+    font-family: ranchers;
+    letter-spacing: 2px;
+    font-size: 12pt;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+/*icon-bar*/
+
+#icon-bar {
+    grid-area: ic;
+    width: 200px;
+    height: 60px;
+    background-color: #A6C76A;
+    border-radius: 100px;
+    border: grey 2px solid;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+img {
+    width: 50px;
+
+}
+*/
+
+.meat-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
+/*try again btn*/
+
+#again {
+    grid-area: again;
+    font-family: mali;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align:center;
+}
+
+
+#back4 {
+    bottom:5px;
+    left:5px;
+    position:absolute;
+    width:30px;
+}
+
+.popup {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: orange 5px solid;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 2s;
+    z-index: -1;
+}
+
+.popup-img {
+    width: 350px;
+    height: 300px;
+}
+
+#close {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-family: mali;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+}
+
+.descrip {
+    margin-left: 20px;
+}
+
+
+#rDes {
+    height:50px;
+    overflow-y:scroll;
+    width:90%;
+    background-color:#F9ECDE;
+    border:solid 2px black;
+
+    padding:5px;
+    border-radius:5px;
+
+
+}
+
+#tryagain {
+    width:30%;
+    
+}
+
+
+
+/*////Result Page Large Screen/////*/
+
+@media screen and (min-width: 768px) {
+    #result-page {
+        background-image: url(../img/background_tablet.svg);
+        grid-template-columns: repeat(5), 1fr;
+        grid-template-rows: 14% 60% 6% 13%;
+        grid-template-areas:
+            "logo logo logo logo logo"
+            "main-cnt main-cnt main-cnt main-cnt main-cnt"
+            ".  select select select ."
+            "ic ic ic ic ic"
+            "again again again again again";
+        display:none;
+
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    .match-title {
+        font-size: 45pt;
+        color:#ED7F5A;
+        margin-bottom:5px;
+    }
+
+    .final-img {
+        width:550px;
+        height:250px;
+    }
+
+    #title, #res {
+        font-size: 25pt;
+    }
+
+    p {
+        font-size: 16pt;
+    }
+    
+    #rDes{
+        height:100px;
+    }
+
+    #sel-title {
+        font-size: 30pt;
+    }
+
+    #icon-bar {
+        height: auto;
+        width: 550px;
+        margin: 0 auto;
+    }
+
+    .icons {
+        width: 150px;
+    }
+
+    #again {
+        margin-top: 8px;
+        font-size: 20pt;
+    }
+
+    .popup {
+        width: 600px;
+        height: 400px;
+
+    }
+
+    .popup-img {
+        width: 600px;
+        height: 400px;
+        ;
+
+    }
+
+    #close {
+        position: absolute;
+        color: white;
+        font-size: 22px;
+        font-family: mali;
+        width:50px;
+
+
+    }
+
+        }
+
+

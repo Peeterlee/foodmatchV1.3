@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#app {
+    z-index: -1;
+    background-image: url(../img/background.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3), 1fr;
+    grid-template-areas:
+        "logo logo logo"
+        ". main-cnt ."
+        "start start start"
+        " . about . "
+}
+
+
+#popUp {
+    z-index: 1;
+    transition: 2s;
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+
+}
+
+#poptitle {
+
+    font-family: ranchers;
+    position: absolute;
+    font-size: 33pt;
+    letter-spacing: 5px;
+    margin-top: 160px;
+    margin-left: 80px;
+
+}
+
+
+#title {
+    font-family: ranchers;
+    letter-spacing: 3px;
+    font-size: 33pt;
+    margin-top: 10px;
+    color: white;
+
+}
+
+
+
+#logo {
+    width: 250px;
+    grid-area: logo;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.main-content-icons {
+    grid-area: main-cnt;
+    width: 300px;
+    height: auto;
+    border-radius: 40px;
+    border: black 2px solid;
+    background-color: #A3C46A;
+    margin: 0 auto;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:-10px;
+}
+
+.icons {
+    width: 95px;
+    margin-right: 200px;
+    z-index: 2;
+}
+
+.ic-div {
+    float: left;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.ic-div-2 {
+    margin: 5px 0 5px 0;
+
+}
+
+.in-ci-divs {
+    width: 1800px;
+    position: relative;
+    left: 100px;
+}
+
+.ic-div-1-1,
+.ic-div-3-1 {
+    animation: slideIn1 10s alternate;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.ic-div-2-1 {
+    animation: slideIn2 10s alternate;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+
+#get-started {
+    grid-area: start;
+    background-color: #EF805B;
+    height: 100px;
+    font-family: 'Ranchers';
+    color: white;
+    font-size: 24pt;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /*
+    text-shadow:
+     2px   0  0   #000,
+    -2px   0  0   #000,
+     0    2px 0   #000,
+     0   -2px 0   #000,
+     1px  1px 0   #000,
+    -1px -1px 0   #000,
+     1px -1px 0   #000,
+    -1px  1px 0   #000,
+     1px  1px 5px #000;
+*/
+    transition-duration: 2s;
+    margin-bottom:-30px;
+}
+
+#get-started-text {
+    animation: textrotating 1s alternate;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+button {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+
+#about {
+    position:absolute;
+    width:8%;
+    right:0;
+    top:0;
+    margin-top:10px;
+    margin-right:10px;
+
+
+}
+
+/*===========ANIMATION============*/
+
+/*=======ICON SLIDE============*/
+@keyframes slideIn1 {
+    0% {
+        left: -200px;
+    }
+
+    25% {
+        left: -500px;
+    }
+
+    50% {
+        left: -800px;
+    }
+
+    75% {
+        left: -1100px;
+    }
+
+    100% {
+        left: -1400px;
+    }
+}
+
+@keyframes slideIn2 {
+    0% {
+        left: -1400px;
+    }
+
+    25% {
+        left: -1100px;
+    }
+
+    50% {
+        left: -800px;
+    }
+
+    75% {
+        left: -500px;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
+/*======TEXT ROTATING============*/
+
+@keyframes textrotating {
+    0% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #app {
+        grid-template-columns: repeat(5), 1fr;
+        grid-template-rows: 26% 55% 12% 5%;
+        grid-template-areas:
+            ". logo logo logo ."
+            ". main-cnt main-cnt main-cnt ."
+            ". start start start ."
+            ".  . about . .";
+        background-image: url(../img/background_tablet.svg);
+    }
+
+    #logo {
+        width: 400px;
+    }
+
+
+    #popUp {
+
+        z-index: 1;
+        text-align: center;
+        font-size: 24pt;
+        position: absolute;
+        margin-top: 150px;
+        width: 70%;
+        height: 54%;
+        left: 16%;
+      text-align:center;
+    }
+    
+    #poptitle {
+        font-size:54pt;
+        margin-top:230px;
+        margin-left:100px;
+    }
+
+    #title {
+        font-family: ranchers;
+        letter-spacing: 3px;
+        font-size: 55pt;
+        margin-top: 20px;
+        color: white;
+
+    }
+
+    #title-desc {
+        font-size: 27px;
+        line-height: 50px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    #closeBtn {
+        margin-top: 20px;
+        font-family: ranchers;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    .main-content-icons {
+        width: 500px;
+        height: auto;
+    }
+
+    .in-ci-divs {
+        width: 2500px;
+    }
+
+    .ic-div-1-1 {
+        left: -715px;
+    }
+
+    .icons {
+        width: 160px;
+    }
+
+    #get-started {
+        height: auto;
+        width: 600px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    #about {
+        font-size: 30pt;
+    }
+
+    @keyframes slideIn1 {
+        0% {
+            left: -350px;
+        }
+
+        25% {
+            left: -715px;
+        }
+
+        50% {
+            left: -1080px;
+        }
+
+        75% {
+            left: -1445px;
+        }
+
+        100% {
+            left: -1810px;
+        }
+    }
+
+    @keyframes slideIn2 {
+        0% {
+            left: -1810px;
+        }
+
+        25% {
+            left: -1445px;
+        }
+
+        50% {
+            left: -1080px;
+        }
+
+        75% {
+            left: -715px;
+        }
+
+        100% {
+            left: -350px;
+        }
+    }
+
+
+}

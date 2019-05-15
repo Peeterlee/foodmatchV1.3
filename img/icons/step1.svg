@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50.2 17.9" style="enable-background:new 0 0 50.2 17.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F4B4A2;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Ranchers-Regular';}
+	.st3{font-size:8.6669px;}
+	.st4{fill:url(#SVGID_1_);}
+</style>
+<g>
+	<path class="st0" d="M31.3,17.8h-23C3.8,17.8,0,14.1,0,9.5V8.3C0,3.8,3.7,0,8.3,0h22.9c4.5,0,8.3,3.7,8.3,8.3v1.2
+		C39.5,14.1,35.8,17.8,31.3,17.8z"/>
+	<text transform="matrix(1 0 0 1 9.6264 11.9817)" class="st1 st2 st3">STEP 1</text>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="437.8179" y1="-38.7256" x2="438.885" y2="-43.2528" gradientTransform="matrix(0 1 1 0 84.9141 -429.4173)">
+		<stop  offset="0" style="stop-color:#F5DDBB"/>
+		<stop  offset="0.2027" style="stop-color:#F4D9B4"/>
+		<stop  offset="0.4926" style="stop-color:#F1D0A1"/>
+		<stop  offset="0.8335" style="stop-color:#EDC082"/>
+		<stop  offset="1" style="stop-color:#EAB871"/>
+	</linearGradient>
+	<polygon class="st4" points="46.9,9.6 44,11.3 41.1,12.9 41.1,9.6 41.1,6.3 44,8 	"/>
+</g>
+</svg>

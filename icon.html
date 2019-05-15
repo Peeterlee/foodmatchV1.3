@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="css/icon.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+        <div id="app">
+            <header class="logo-container">
+                <img src="img/logo.svg" id="logo" onclick="BackToHome()">
+            </header>
+          
+                <div id="row1">
+                    <img src="img/icons/indian.svg" class="icon" id="Indian" onclick="createSel(this)">
+                    <img src="img/icons/japan.svg" class="icon" id="KJ" onclick="createSel(this)">
+                    <img src="img/icons/western.svg" class="icon" id="Western" onclick="createSel(this)">
+                </div>
+            
+             <div id="row2">
+                    <img src="img/icons/bread-icon.svg" class="icon" id="Bread" onclick="createSel(this)">
+                    <img src="img/icons/rice-icon.svg" class="icon" id="Rice" onclick="createSel(this)">
+                    <img src="img/icons/meat-icon.svg" class="icon" id="Meat" onclick="createSel(this)">
+                    <img src="img/icons/noodles-icon.svg" class="icon" id="Noodles" onclick="createSel(this)"/>
+                </div>
+            
+              
+             <div id="row3">
+                    <img src="img/icons/veggie-icon.svg" class="icon" id="Veggie" onclick="createSel(this)">
+                    <img src="img/icons/soup-icon.svg" class="icon" id="Soup" onclick="createSel(this)">
+                    <img src="img/icons/spicy-icon.svg" class="icon" id="Spicy" onclick="createSel(this)">
+                </div>
+            
+   <div id="selection-container">
+            <div class="sel-title">Your Selection</div>
+            <div class="selection">
+<!--
+                <img src="" id="sel1" class="sel" onclick="removeSel(this)">
+                <img src="" id="sel2" class="sel">
+                <img src="" id="sel3" class="sel">
+                <img src="" id="sel4" class="sel">
+                <img src="" id="sel5" class="sel">
+                <img src="" id="sel6" class="sel">
+                <img src="" id="sel7" class="sel">
+-->
+                
+
+            </div>
+       
+            </div>
+            <button onclick="filterResults()">Filters</button>
+            <footer>
+                <img src="img/buttons/back.svg" id="back" onclick="BackToHome()">
+            </footer>
+            <script src="js/result.js"></script>
+            <script src="js/icon2.js"></script>
+        </div>
+</body>
+</html>

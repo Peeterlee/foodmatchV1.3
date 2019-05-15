@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <title>FoodMatch Step Page and Result Page</title>
+    <meta charset="utf-8">
+    <link href="css/steps.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ 
+<body>
+    <div id="step-page">
+        <header class="logo-container">
+            <img src="img/logo.svg" id="logo" onclick="BackToHome()">
+        </header>
+        <div id="steps-container">
+            <div class="steps" onclick="BackToStep1()">STEP 1</div>
+            <div class="triangle"></div>
+            <div class="steps" onclick="BackToStep2()">STEP 2</div>
+            <div class="triangle"></div>
+            <div class="steps">STEP 3</div>
+        </div>
+        <div id="category-container">
+            <div class="categories western" onclick="Step1(this)">Western</div>
+            <div class="categories KJ" onclick="Step1(this)">Korean/Japanese</div>
+            <div class="categories indian" onclick="Step1(this)">Indian</div>
+            <div class="categoriess ca1" onclick="Step2(this)"></div>
+            <div class="categoriess ca2" onclick="Step2(this)"></div>
+            <div class="categoriess ca3" onclick="Step3(this)"></div>
+            <div class="categoriess ca4" onclick="Step3(this)"></div>
+        </div>
+        <div id="selection-container">
+            <div class="sel-title">Your Selection</div>
+            <div class="selection">
+                <img src="" class="sel1">
+                <img src="" class="sel2">
+
+            </div>
+        </div>
+        <footer>
+            <img src="img/buttons/back.svg" id="back" onclick="BackToStep()">
+        </footer>
+
+    </div>
+
+    <div id="result-page">
+        <img src="img/logo.svg" id="logo" onclick="BackToHome()">
+        
+        <div id="main-cnt">
+            <div class="popup">
+                <img src="" class="popup-img" />
+                <img src="img/zoomout.svg" id="close" onclick="closeBtn()" />
+            </div>
+
+            <div class="match-title"></div>
+
+            <div class="final-img">
+                <img src="img/zoomin.svg" id="zoomIn" onclick="TriggerPopUp()" />
+            </div>
+
+            <div class="descrip">
+                <div id="title">What is <b id="foodname"></b>?</div>
+                <p id="rDes"></p>
+
+                <div id="res">Restaurant Recommendation</div>
+                <p><a href="" target="_blank" class="res1"></a>, <a href="" target="_blank" class="res2"></a>, <a href="" target="_blank" class="res3"></a> ,<a href="" target="_blank" class="res4"></a></p>
+            </div>
+
+        </div>
+
+        <div id="sel-title">Your Selections</div>
+
+        <div id="icon-bar">
+            <img src="" class="sel41 icons">
+            <img src="" class="sel42 icons">
+            <img src="" class="sel43 icons">
+
+        </div>
+
+        <div id="again" >
+            <img src="img/buttons/back.svg" id="back4" onclick="BackToStep3()">
+                <img src="img/buttons/tryagain.svg" id="tryagain" onclick="TryAgainBut()">
+        </div>
+                    
+
+        
+
+    </div>
+
+
+    <script src="js/steps.js"></script>
+</body>
+</html>
