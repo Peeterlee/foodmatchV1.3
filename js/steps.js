@@ -32,13 +32,13 @@ var selection = {
 }
  
 var patterns = { 
-    pt1 : "../foodmatchV1.2/img/ct-patterns/pattern-1.svg",
-    pt2 : "../foodmatchV1.2/img/ct-patterns/pattern-2.svg", 
-    pt3 : "../foodmatchV1.2/img/ct-patterns/pattern-3.svg", 
-    pt4 : "../foodmatchV1.2/img/ct-patterns/pattern-4.svg", 
-    pt5 : "../foodmatchV1.2/img/ct-patterns/pattern-5.svg", 
-    pt6 : "../foodmatchV1.2/img/ct-patterns/pattern-6.svg", 
-    pt7 : "../foodmatchV1.2/img/ct-patterns/pattern-7.svg" 
+    pt1 : "../foodmatchV1.3/img/ct-patterns/pattern-1.svg",
+    pt2 : "../foodmatchV1.3/img/ct-patterns/pattern-2.svg", 
+    pt3 : "../foodmatchV1.3/img/ct-patterns/pattern-3.svg", 
+    pt4 : "../foodmatchV1.3/img/ct-patterns/pattern-4.svg", 
+    pt5 : "../foodmatchV1.3/img/ct-patterns/pattern-5.svg", 
+    pt6 : "../foodmatchV1.3/img/ct-patterns/pattern-6.svg", 
+    pt7 : "../foodmatchV1.3/img/ct-patterns/pattern-7.svg" 
 }
  
 var categories = {
