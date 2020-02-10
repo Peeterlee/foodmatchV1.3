@@ -1059,6 +1059,7 @@ function TryAgainBut(){
     ca4Move.style.transform = "translateX(-180%)";
     selMove.style.transform = "translateX(-180%)";
     step1But.classList.add("step11");
+    selIcon2.style.display = "none";
     step3But.classList.remove("step33");
     sessionStorage.setItem("pageNum", 1);
 }
