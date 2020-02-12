@@ -2,4 +2,4 @@
 
 Supports in tablet and mobile size.
 
-![FoodMatch_Video](sample/FoodMatch.g
+![FoodMatch_Video](sample/FoodMatch.gif)
